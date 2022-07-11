@@ -1,13 +1,16 @@
 
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 import './App.css';
 import Demo from './component/header/header';
+import Footer from './component/footer/footer';
+
 
 function App() {
   return (
 <>
-<Button>material ui</Button>
+
 <Demo/>
+<Footer/>
 
 </>
   );
