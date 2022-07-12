@@ -9,4 +9,28 @@
     height: 100vh;
     background: url(.././images/hero-bg.png) top center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
+.about{
+ background-color:#eaedf0;
+
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.carousel-inner img {
+    width: 100% !important;
+    height: 400px !important;
+}
+#ram{
+    color: #59f42a;
+    font-size: 17px;
+}
+
