@@ -1,17 +1,20 @@
 
 // import { Button } from '@mui/material';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Footer from './component/footer/footer';
 import Demo from './component/header/header';
-import HeroSection from './component/herosection';
+import Mid from './component/mid';
 
 function App() {
   return (
 <>
-
+<BrowserRouter>
 <Demo/>
-<HeroSection/>
+{/* <HeroSection/> */}
+<Mid></Mid>
 <Footer/>
+</BrowserRouter>
 
 </>
   );
