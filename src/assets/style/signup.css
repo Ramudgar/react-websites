@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-body{
-	background: #E1EBEC;
-	font-family: 'Poppins', sans-serif;
-}
-.row{
+
+.privacy{
 	width: 900px;
 	border: none;
 	border-radius: 0;
@@ -29,13 +26,13 @@ span.txt{
 h6.mt-3{
 	padding-right: 115px;
 }
-.footer{
+.content-singup{
 	margin-top: 220px;
 }
-.footer span{
+.content-singup span{
 	color: #B0A1E2;
 	font-size: 9px;
-	cursor: pointer;
+	cursor: pointer; 
 }
 .fab{
 	color: #EDEDF5;
@@ -110,7 +107,7 @@ p.exist{
 }
 p.exist span{
 	cursor: pointer;
-	color: #ABA5D3;
+	color: #361aed;
 }
 
 @media screen and (max-width: 993px){
@@ -118,12 +115,12 @@ p.exist span{
 		position: absolute;
 		left: 180px;
 	}
-	.footer{
+	.content-singup{
 		margin-top: 170px;
 	}
 }
 @media screen and (max-width: 768px){
-	.row{
+	.privacy{
 		width: 450px;
 	}
 	.rcol{
@@ -134,7 +131,7 @@ p.exist span{
 		.rcol{
 			padding: 60px 50px 60px 50px;
 		}
-		.footer{
+		.content-singup{
 		margin-top: 140px;
 	}
 	}

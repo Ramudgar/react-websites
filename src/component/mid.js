@@ -13,7 +13,7 @@ import Signup from "./signup";
 <Route path="/" element={<Home/>} ></Route>   /* This code checks and open the landing page whether the link is empty */            
 <Route path="/home" element={<Home/>} ></Route>
 <Route path="/login" element={<Login/>} ></Route>
-<Route path="/logout" element={<Signup/>} ></Route>
+<Route path="/signup" element={<Signup/>} ></Route>
 
                </Routes>
             );
