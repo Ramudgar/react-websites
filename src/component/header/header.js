@@ -29,7 +29,7 @@ function Header() {
             <a class="nav-link color-self " href="login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link color-self " href="#">Logout</a>
+            <a class="nav-link color-self " href="logout">Logout</a>
           </li>
 
          

@@ -3,14 +3,15 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Footer from './component/footer/footer';
-import Demo from './component/header/header';
+import Header from './component/header/header';
 import Mid from './component/mid';
+import HeroSection from './component/herosection';
 
 function App() {
   return (
 <>
 <BrowserRouter>
-<Demo/>
+<Header/>
 {/* <HeroSection/> */}
 <Mid></Mid>
 <Footer/>
