@@ -6,9 +6,6 @@
 // }
 // export default Login;
 
-import * as React from 'react';
-import axios from 'axios';
-import { useState,props } from 'react';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
@@ -20,14 +17,15 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import axios from 'axios';
+import * as React from 'react';
+import { useState } from 'react';
 
 
 
 
 const theme = createTheme();
-
 export default function SignIn() {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role,setRole]=useState("");
@@ -56,6 +54,7 @@ export default function SignIn() {
           if(res.data.token){
               console.log(res.data)
               localStorage.setItem('userToken', res.data.token);
+
               if(role==="company"){
               window.location.replace("home");}
               else if(role==="employee"){
@@ -66,7 +65,7 @@ export default function SignIn() {
               }
           }else if(email ===null || password===null){
               setMessage("Please some fields are empty");
-              alert("Please some fields are empty");
+              alert(Response.data.msg);
           }
           else if(role===null){
             setMessage("Please select a role");
@@ -74,7 +73,7 @@ export default function SignIn() {
           }
           else{
             setMessage("Invalid email or password");
-            alert("Invalid email or password");
+            alert(res.data.msg) ;
           }
         });
     } catch (err) {
@@ -108,7 +107,6 @@ export default function SignIn() {
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
           <p>{Message}</p>
-
             <TextField
               margin="normal"
               required
@@ -131,7 +129,7 @@ export default function SignIn() {
               autoComplete="current-password"
               onChange={(e)=>setPassword(e.target.value)}
             />
-           {/* dropdown */}
+       {/* dropdown */}
            <div className="form-group mt-2 border-1-dark border-box shadow p-1">
             <select className=" form-control text-dark"  onClick={(e)=>setRole(e.target.value)}>
                 <option>Select your role</option>
