@@ -5,16 +5,16 @@ import './App.css';
 import Footer from './component/footer/footer';
 import Header from './component/header/header';
 import Mid from './component/mid';
-import HeroSection from './component/herosection';
-
+import EmpHome from './component/employee/emp_home';
 function App() {
   return (
 <>
 <BrowserRouter>
-<Header/>
-{/* <HeroSection/> */}
-<Mid></Mid>
-<Footer/>
+<EmpHome/>
+{/* <Header/> */}
+
+{/* <Mid></Mid> */}
+{/* <Footer/> */}
 </BrowserRouter>
 
 </>

@@ -10,12 +10,11 @@ import Signup from "./signup";
         render() {
             return (
                <Routes>
-
 <Route path="/" element={<Home/>} ></Route>   /* This code checks and open the landing page whether the link is empty */            
 <Route path="/home" element={<Home/>} ></Route>
 <Route path="/login" element={<Login/>} ></Route>
 <Route path="/signup" element={<Signup/>} ></Route>
-<Route path="/emp_home" element={<EmpHome/>} ></Route>
+
 
                </Routes>
             );
