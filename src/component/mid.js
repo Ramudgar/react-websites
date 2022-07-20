@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Route, Routes } from "react-router-dom";
+import EmpHome from "./employee/emp_home";
 import Home from "./herosection";
 import Login from "./login";
 import Signup from "./signup";
@@ -14,6 +15,7 @@ import Signup from "./signup";
 <Route path="/home" element={<Home/>} ></Route>
 <Route path="/login" element={<Login/>} ></Route>
 <Route path="/signup" element={<Signup/>} ></Route>
+<Route path="/emp_home" element={<EmpHome/>} ></Route>
 
                </Routes>
             );

@@ -1,4 +1,4 @@
-
+import '../../assets/style/emp_home.css';
 function EmpHome() {
     return (
        <>
