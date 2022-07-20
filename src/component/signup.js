@@ -1,7 +1,7 @@
-import {useState }  from 'react';
+import axios from 'axios';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './../assets/style/signup.css';
-import axios from 'axios';
 
 
 
@@ -26,9 +26,9 @@ function Signup(){
       role: role
     };
     
-    axios.post("http://localhost:3000/user/register/", data).then((res) => {
+    axios.post("http://localhost:3000/user/register", data).then((res) => {
       console.log(res.data)
-      if(Response,data.success === true){
+      if(res.data.success === true){
         alert("User registered successfully");
       }
       else{

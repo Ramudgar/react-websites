@@ -7,7 +7,8 @@
 // export default Login;
 
 import * as React from 'react';
-// import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useState,props } from 'react';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
@@ -26,13 +27,65 @@ import Typography from '@mui/material/Typography';
 const theme = createTheme();
 
 export default function SignIn() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [role,setRole]=useState("");
+  const [Message, setMessage] = useState("");
+  const LoginUser = (e) => {
+    try {
+    //   e.preventDefault(); // stop the form from reloading the page
+      const data = {
+        email: email,
+        password: password,
+        role: role
+      };
+      axios
+        .post("http://localhost:3000/user/login", data)
+        .then((res) => {
+          // if(res.data.success === true){
+          //   alert("User logged in successfully");
+
+          // }
+          // else{
+          //   alert("User registration failed");
+          // }
+
+
+
+          if(res.data.token){
+              console.log(res.data)
+              localStorage.setItem('userToken', res.data.token);
+              if(role==="company"){
+              window.location.replace("home");}
+              else if(role==="employee"){
+                window.location.replace("signup");
+              }
+              else{
+                window.location.replace("login");
+              }
+          }else if(email ===null || password===null){
+              setMessage("Please some fields are empty");
+              alert("Please some fields are empty");
+          }
+          else if(role===null){
+            setMessage("Please select a role");
+            alert("Please select a role");
+          }
+          else{
+            setMessage("Invalid email or password");
+            alert("Invalid email or password");
+          }
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    
   };
 
   return (
@@ -54,6 +107,8 @@ export default function SignIn() {
             Sign in
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <p>{Message}</p>
+
             <TextField
               margin="normal"
               required
@@ -63,6 +118,7 @@ export default function SignIn() {
               name="email"
               autoComplete="email"
               autoFocus
+              onChange={(e)=>setEmail(e.target.value)}
             />
             <TextField
               margin="normal"
@@ -73,10 +129,11 @@ export default function SignIn() {
               type="password"
               id="password"
               autoComplete="current-password"
+              onChange={(e)=>setPassword(e.target.value)}
             />
            {/* dropdown */}
            <div className="form-group mt-2 border-1-dark border-box shadow p-1">
-            <select className=" form-control text-dark">
+            <select className=" form-control text-dark"  onClick={(e)=>setRole(e.target.value)}>
                 <option>Select your role</option>
                 <option>employee</option>
                 <option>investor</option>
@@ -88,7 +145,7 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-            >
+            onClick={LoginUser}>
               Sign In
             </Button>
             <Grid container>
