@@ -1,4 +1,4 @@
-import '../../assets/style/addJob.css'
+import '../../assets/style/addJob.css';
 function AddJob() {
     return (
         <>
@@ -89,6 +89,10 @@ function AddJob() {
                     </div>
                 </div>
             </div>
+
+
+
+    
         </>
     )
 }
