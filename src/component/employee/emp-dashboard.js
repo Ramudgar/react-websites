@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 
 
 function EmpDashboard() {
@@ -6,58 +7,51 @@ function EmpDashboard() {
         <><div className="container">
             <div class="container">
                 <div class="card p-3 ">
-                    <div class="hello d-flex justify-content-end align-items-center mt-3">
-                        <span>Hi,Frank Jack</span>
+                    <div class=" d-flex flex-column ms-auto align-items-center mt-3">
+                       <div> <img src="https://www.acquire.com/wp-content/uploads/2019/01/Acquire-Logo-1.png" alt="Acquire" class="img-fluid rounded-circle" ></img></div>
+                       <div>Hi,Ram</div>
                     </div>
 
                     <div class="card-body m-3 ">
                         <div class="row ">
-                            <div class="col-md-3 my-3 ">
-                                <div class="card p-4">
+                            <div class="col-md-3 my-3  ">
+                                <div class="card bg-primary" style={{height:120, width:240}} >
                                     <div class="card-body">
                                         <div class="card-title">
-                                            <h5>My Profile</h5>
+                                            <h5>Total Jobs</h5>
 
                                         </div>
                                     </div>
                                 </div></div>
 
-                            <div class="col-md-3 my-3">
-                                <div class="card p-4">
+                            <div class="col-md-3 my-3 ">
+                                <div class="card bg-info"style={{height:120, width:240}}>
                                     <div class="card-body ">
                                         <div class="card-title">
-                                            <h5>My Profile</h5>
+                                            <h5>Total Applicants</h5>
 
                                         </div>
                                     </div>
                                 </div></div>
-                            <div class="col-md-3 my-3">
-                                <div class="card p-4">
+                            <div class="col-md-3 my-3 ">
+                                <div class="card bg-success"style={{height:120, width:250}}>
                                     <div class="card-body ">
                                         <div class="card-title">
-                                            <h5>My Profile</h5>
+                                            <h5> Accepted Applicants</h5>
 
                                         </div>
                                     </div>
                                 </div></div>
-                            <div class="col-md-3 my-3">
-                                <div class="card p-4">
+                            <div class="col-md-3 my-3 ">
+                                <div class="card bg-warning"style={{height:120, width:240}}>
                                     <div class="card-body ">
                                         <div class="card-title">
-                                            <h5>My Profile</h5>
+                                            <h5>Rejected Applicants</h5>
 
                                         </div>
                                     </div>
                                 </div></div>
-                            <div class="col-md-3 my-3">
-                                <div class="card p-4">
-                                    <div class="card-body ">
-                                        <div class="card-title">
-                                            <h5>My Profile</h5>
-
-                                        </div>
-                                    </div>
-                                </div></div>
+                        
                         </div></div>
                 </div>
             </div>
@@ -78,15 +72,13 @@ function EmpDashboard() {
                 <div className="table-responsive px-2">
                     <table className="table table-borderless">
                         <thead>
-                            <tr>
-                                <th scope="col">COMPANY<span>ID</span></th>
-                                <th scope="col">COMPANY</th>
-                                <th scope="col">MID</th>
-                                <th scope="col">BANK<span className="ps-1">NAME</span></th>
-                                <th scope="col">CUR</th>
-                                <th className="text-center" scope="col">3DS</th>
-                                <th className="text-center" scope="col">ACTIVE</th>
-                                <th className="text-center" scope="col">ACTION</th>
+                            <tr className="m-2 ">
+                                <th scope="col" className='fs-6'>Applicant<span>ID</span></th>
+                                <th scope="col" className='fs-6'>Applicant Name</th>
+                                <th scope="col" className='fs-6'>Job Title</th>
+                                <th scope="col" className='fs-6'>Applied Date</th>
+                                <th scope="col" className='fs-6 '>Action</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -95,70 +87,7 @@ function EmpDashboard() {
                                 <td><span className="bg-bdark">ABC<span className="ps-1">LOANS</span></span></td>
                                 <td><span className="bg-blight">1343</span></td>
                                 <td><span className="bg-bdark">Faster<span>Trading</span></span></td>
-                                <td><span className="bg-bdark">GBP</span></td>
-                                <td className="text-center px-0"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-ellipsis-h"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span className="bg-blight">236</span></td>
-                                <td><span className="bg-bdark">BCE<span className="ps-1">LOANS</span></span></td>
-                                <td><span className="bg-blight">1298</span></td>
-                                <td><span className="bg-bdark">Secure<span>Trading</span></span></td>
-                                <td><span className="bg-bdark">GBP</span></td>
-                                <td className="text-center px-0"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-ellipsis-h"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span className="bg-blight">237</span></td>
-                                <td><span className="bg-bdark">CDE<span className="ps-1">LOANS</span></span></td>
-                                <td><span className="bg-blight">1313</span></td>
-                                <td><span className="bg-bdark">Secure<span>Trading</span></span></td>
-                                <td><span className="bg-bdark">GBP</span></td>
-                                <td className="text-center px-0"><span className="fas fa-times"></span></td>
-                                <td className="text-center"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-ellipsis-h"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span className="bg-blight">235</span></td>
-                                <td><span className="bg-bdark">DEF<span className="ps-1">LOANS</span></span></td>
-                                <td><span className="bg-blight">1323</span></td>
-                                <td><span className="bg-bdark">Secure<span>Trading</span></span></td>
-                                <td><span className="bg-bdark">GBP</span></td>
-                                <td className="text-center px-0"><span className="fas fa-times"></span></td>
-                                <td className="text-center"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-ellipsis-h"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span className="bg-blight">235</span></td>
-                                <td><span className="bg-bdark">FEG<span className="ps-1">LOANS</span></span></td>
-                                <td><span className="bg-blight">1443</span></td>
-                                <td><span className="bg-bdark">Secure<span>Trading</span></span></td>
-                                <td><span className="bg-bdark">GBP</span></td>
-                                <td className="text-center px-0"><span className="fas fa-times"></span></td>
-                                <td className="text-center"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-ellipsis-h"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span className="bg-blight">237</span></td>
-                                <td><span className="bg-bdark">GFR<span className="ps-1">LOANS</span></span></td>
-                                <td><span className="bg-blight">1943</span></td>
-                                <td><span className="bg-bdark">Faster<span>Trading</span></span></td>
-                                <td><span className="bg-bdark">GBP</span></td>
-                                <td className="text-center px-0"><span className="fas fa-times"></span></td>
-                                <td className="text-center"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-ellipsis-h"></span></td>
-                            </tr>
-                            <tr>
-                                <td><span className="bg-blight">235</span></td>
-                                <td><span className="bg-bdark">ABC<span className="ps-1">LOANS</span></span></td>
-                                <td><span className="bg-blight">1343</span></td>
-                                <td><span className="bg-bdark">Faster<span>Trading</span></span></td>
-                                <td><span className="bg-bdark">GBP</span></td>
-                                <td className="text-center px-0"><span className="fas fa-times"></span></td>
-                                <td className="text-center"><span className="fas fa-check"></span></td>
-                                <td className="text-center"><span className="fas fa-ellipsis-h"></span></td>
+                                <td><span><Link to="" className='btn btn-primary'>Accept </Link></span>  <span><Link to="" className='btn btn-danger'>Reject </Link></span></td>
                             </tr>
                         </tbody>
                     </table>
