@@ -4,20 +4,20 @@ import {Link} from 'react-router-dom'
 function ComDashboard() {
 
     return (
-        <><div className="container">
-            <div class="container">
-                <div class="card p-3 ">
-                    <div class=" d-flex flex-column ms-auto align-items-center mt-3">
-                       <div> <img src="https://www.acquire.com/wp-content/uploads/2019/01/Acquire-Logo-1.png" alt="Acquire" class="img-fluid rounded-circle" ></img></div>
+        <>
+            <div className="container">
+                <div className="card p-3 ">
+                    <div className=" d-flex flex-column ms-auto align-items-center mt-3">
+                       <div> <img src="https://www.acquire.com/wp-content/uploads/2019/01/Acquire-Logo-1.png" alt="Acquire" className="img-fluid rounded-circle" ></img></div>
                        <div>Hi,Ram</div>
                     </div>
 
-                    <div class="card-body m-3 ">
-                        <div class="row ">
-                            <div class="col-md-3 my-3  ">
-                                <div class="card bg-primary" style={{height:120, width:240}} >
-                                    <div class="card-body ">
-                                        <div class=" text-white text-center ">
+                    <div className="card-body m-3 ">
+                        <div className="row ">
+                            <div className="col-md-3 my-3  ">
+                                <div className="card bg-primary" style={{height:120, width:240}} >
+                                    <div className="card-body ">
+                                        <div className=" text-white text-center ">
                                             <h5>Total Jobs</h5><br/>
                                             <span className='rounded-circle bg-warning p-3 text-dark'>99</span>
 
@@ -25,30 +25,30 @@ function ComDashboard() {
                                     </div>
                                 </div></div>
 
-                            <div class="col-md-3 my-3 ">
-                                <div class="card bg-info"style={{height:120, width:240}}>
-                                    <div class="card-body ">
-                                    <div class=" text-white text-center ">
+                            <div className="col-md-3 my-3 ">
+                                <div className="card bg-info"style={{height:120, width:240}}>
+                                    <div className="card-body ">
+                                    <div className=" text-white text-center ">
                                             <h5>Total Applicant</h5><br/>
                                             <span className='rounded-circle bg-warning p-3 text-dark'>99</span>
 
                                         </div>
                                     </div>
                                 </div></div>
-                            <div class="col-md-3 my-3 ">
-                                <div class="card bg-success"style={{height:120, width:250}}>
-                                    <div class="card-body ">
-                                    <div class=" text-white text-center ">
+                            <div className="col-md-3 my-3 ">
+                                <div className="card bg-success"style={{height:120, width:250}}>
+                                    <div className="card-body ">
+                                    <div className=" text-white text-center ">
                                             <h5>Accepted Applicant</h5><br/>
                                             <span className='rounded-circle bg-warning p-3 text-dark'>99</span>
 
                                         </div>
                                     </div>
                                 </div></div>
-                            <div class="col-md-3 my-3 ">
-                                <div class="card bg-warning"style={{height:120, width:240}}>
-                                    <div class="card-body ">
-                                    <div class=" text-white text-center ">
+                            <div className="col-md-3 my-3 ">
+                                <div className="card bg-warning"style={{height:120, width:240}}>
+                                    <div className="card-body ">
+                                    <div className=" text-white text-center ">
                                             <h5>Total Jobs</h5><br/>
                                             <span className='rounded-circle bg-info p-3 text-dark'>99</span>
 
@@ -58,7 +58,7 @@ function ComDashboard() {
                         
                         </div></div>
                 </div>
-            </div>
+            
 
 
 
@@ -101,8 +101,9 @@ function ComDashboard() {
                     <div className="d-flex justify-content-end bg-bdark fs13"> <span className="pe-1">Show</span> <input className="input-10" type="number" value="25"></input> <span className="ps-2"><span className="pe-2">/</span>Page</span> </div>
                 </div>
             </div>
+            </div>
 
-        </div>
+        
 
         </>
     )

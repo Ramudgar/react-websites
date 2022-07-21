@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../../assets/style/emp_home.css';
+import '../../assets/style/com_home.css';
 import ComMid from './com-mid';
 function ComHome() {
     return (
