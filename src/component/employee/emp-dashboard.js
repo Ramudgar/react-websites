@@ -16,9 +16,10 @@ function EmpDashboard() {
                         <div class="row ">
                             <div class="col-md-3 my-3  ">
                                 <div class="card bg-primary" style={{height:120, width:240}} >
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            <h5>Total Jobs</h5>
+                                    <div class="card-body ">
+                                        <div class=" text-white text-center ">
+                                            <h5>Total Jobs</h5><br/>
+                                            <span className='rounded-circle bg-warning p-3 text-dark'>99</span>
 
                                         </div>
                                     </div>
@@ -27,8 +28,9 @@ function EmpDashboard() {
                             <div class="col-md-3 my-3 ">
                                 <div class="card bg-info"style={{height:120, width:240}}>
                                     <div class="card-body ">
-                                        <div class="card-title">
-                                            <h5>Total Applicants</h5>
+                                    <div class=" text-white text-center ">
+                                            <h5>Total Applicant</h5><br/>
+                                            <span className='rounded-circle bg-warning p-3 text-dark'>99</span>
 
                                         </div>
                                     </div>
@@ -36,8 +38,9 @@ function EmpDashboard() {
                             <div class="col-md-3 my-3 ">
                                 <div class="card bg-success"style={{height:120, width:250}}>
                                     <div class="card-body ">
-                                        <div class="card-title">
-                                            <h5> Accepted Applicants</h5>
+                                    <div class=" text-white text-center ">
+                                            <h5>Accepted Applicant</h5><br/>
+                                            <span className='rounded-circle bg-warning p-3 text-dark'>99</span>
 
                                         </div>
                                     </div>
@@ -45,8 +48,9 @@ function EmpDashboard() {
                             <div class="col-md-3 my-3 ">
                                 <div class="card bg-warning"style={{height:120, width:240}}>
                                     <div class="card-body ">
-                                        <div class="card-title">
-                                            <h5>Rejected Applicants</h5>
+                                    <div class=" text-white text-center ">
+                                            <h5>Total Jobs</h5><br/>
+                                            <span className='rounded-circle bg-info p-3 text-dark'>99</span>
 
                                         </div>
                                     </div>
@@ -58,8 +62,8 @@ function EmpDashboard() {
 
 
 
-            <div id="topnavbar">
-                <div className="d-flex align-items-center mb-3 px-md-3 px-2">
+            <div id="topnavbar mt-2">
+                <div className="d-flex align-items-center mb-3 mt-3 px-md-3 px-2">
                     <span className="text-uppercase fs13 fw-bolder pe-3">search<span className="ps-1">by</span>
                     </span>
                     <form className="example d-flex align-items-center">
