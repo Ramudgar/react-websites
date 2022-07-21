@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Route, Routes } from "react-router-dom";
-import EmpHome from "./employee/emp_home";
 import Home from "./herosection";
 import Login from "./login";
 import Signup from "./signup";

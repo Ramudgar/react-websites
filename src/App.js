@@ -5,12 +5,12 @@ import './App.css';
 import Footer from './component/footer/footer';
 import Header from './component/header/header';
 import Mid from './component/mid';
-import EmpHome from './component/employee/emp_home';
+import ComHome from './component/company/com_home';
 function App() {
   return (
 <>
 <BrowserRouter>
-<EmpHome/>
+<ComHome/>
 {/* <Header/> */}
 
 {/* <Mid></Mid> */}

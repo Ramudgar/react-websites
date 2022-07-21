@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 
 
-function EmpDashboard() {
+function ComDashboard() {
 
     return (
         <><div className="container">
@@ -107,4 +107,4 @@ function EmpDashboard() {
         </>
     )
 }
-export default EmpDashboard;
+export default ComDashboard;
