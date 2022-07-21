@@ -13,7 +13,7 @@ function ComHome() {
         <ul id="navbar-items" className="p-0">
            <Link to="/"><li> <span className="fas fa-th-list"></span> <span className="ps-3 name" href="/">Dashboard</span> </li></Link>   
            <Link to="/addJob"> <li> <span className="fas fa-chart-line"></span> <span className="ps-3 name">Create Jobs</span> </li></Link> 
-           <Link to=""> <li> <span className="fas fa-chart-line"></span> <span className="ps-3 name">View Jobs</span> </li></Link>
+           <Link to="/ViewJob"> <li> <span className="fas fa-chart-line"></span> <span className="ps-3 name">View Jobs</span> </li></Link>
            <Link to="/addProfile"><li> <span className="fas fa-clipboard-check"></span> <span className="ps-3 name">Profile</span> </li></Link>
            <Link to=""><li> <span className="fas fa-calendar-alt"></span> <span className="ps-3 name">account</span> </li></Link>
         </ul>
