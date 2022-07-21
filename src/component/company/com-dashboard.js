@@ -6,15 +6,15 @@ function ComDashboard() {
     return (
         <>
             <div className="container">
-                <div className="card p-3 ">
-                    <div className=" d-flex flex-column ms-auto align-items-center mt-3">
-                       <div> <img src="https://www.acquire.com/wp-content/uploads/2019/01/Acquire-Logo-1.png" alt="Acquire" className="img-fluid rounded-circle" ></img></div>
-                       <div>Hi,Ram</div>
+                <div className="container p-3 ">
+                    <div className="container me-3">
+                       <div className='container justify-content-end mb-2 text-end '> <img src="https://www.acquire.com/wp-content/uploads/2019/01/Acquire-Logo-1.png" alt="Acquire" className="img-fluid rounded-circle " ></img><div>Hi,Ram</div></div>
+                       
                     </div>
 
-                    <div className="card-body m-3 ">
-                        <div className="row ">
-                            <div className="col-md-3 my-3  ">
+                    
+                        <div className= "container d-flex">
+                            <div className="col-sm-3    ">
                                 <div className="card bg-primary" style={{height:120, width:240}} >
                                     <div className="card-body ">
                                         <div className=" text-white text-center ">
@@ -25,7 +25,7 @@ function ComDashboard() {
                                     </div>
                                 </div></div>
 
-                            <div className="col-md-3 my-3 ">
+                            <div className="col-sm-3  ">
                                 <div className="card bg-info"style={{height:120, width:240}}>
                                     <div className="card-body ">
                                     <div className=" text-white text-center ">
@@ -35,7 +35,7 @@ function ComDashboard() {
                                         </div>
                                     </div>
                                 </div></div>
-                            <div className="col-md-3 my-3 ">
+                            <div className="col-sm-3  ">
                                 <div className="card bg-success"style={{height:120, width:250}}>
                                     <div className="card-body ">
                                     <div className=" text-white text-center ">
@@ -45,7 +45,7 @@ function ComDashboard() {
                                         </div>
                                     </div>
                                 </div></div>
-                            <div className="col-md-3 my-3 ">
+                            <div className="col-sm-3  ">
                                 <div className="card bg-warning"style={{height:120, width:240}}>
                                     <div className="card-body ">
                                     <div className=" text-white text-center ">
@@ -54,9 +54,11 @@ function ComDashboard() {
 
                                         </div>
                                     </div>
-                                </div></div>
+                                </div>
+                                </div>
                         
-                        </div></div>
+                        </div>
+                        
                 </div>
             
 
