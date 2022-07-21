@@ -1,3 +1,5 @@
+import '../../assets/style/view-jobs.css'
+
 function ViewJobs() {
   return (
     <>
@@ -7,14 +9,21 @@ function ViewJobs() {
           <thead>
             <tr class="border-bottom">
               <th>
-                <span class="ml-2">Time</span>
+                <span class="ml-2">Job Id</span>
               </th>
               <th>
-                <span class="ml-2">Agent</span>
+                <span class="ml-2">Job Description</span>
               </th>
               <th>
-                <span class="ml-2">Customer</span>
+                <span class="ml-2">Job Type</span>
               </th>
+              <th>
+                <span class="ml-2">posted date</span>
+              </th>
+              <th>
+                <span class="ml-2">deadline</span>
+              </th>
+             
               <th>
                 <span class="ml-2">Location</span>
               </th>
@@ -27,8 +36,8 @@ function ViewJobs() {
             <tr class="border-bottom">
               <td>
                 <div class="p-2">
-                  <span class="d-block font-weight-bold">Tomorrow</span>
-                  <small>2:30PM</small>
+                  <span class="d-block font-weight-bold"></span>
+                  <small>123</small>
                 </div>
               </td>
               <td>
@@ -43,268 +52,36 @@ function ViewJobs() {
               </td>
               <td>
                 <div class="p-2">
-                  <span class="font-weight-bold">Ammy Song</span>
+                  <span class="font-weight-bold">Full time</span>
+                </div>
+              </td>
+              <td>
+                <div class="p-2">
+                  <span class="font-weight-bold">2072-02-1</span>
+                </div>
+              </td>
+              <td>
+                <div class="p-2">
+                  <span class="font-weight-bold">2077-02-4</span>
                 </div>
               </td>
               <td>
                 <div class="p-2 d-flex flex-column">
-                  <span>1 City point,#2A</span>
-                  <span> Brooklyn,NY</span>
+                  <span>Kathmandu</span>
+                  
                 </div>
               </td>
               <td>
                 <div class="p-2 icons">
-                  <i class="fa fa-phone text-danger"></i>
-                  <i class="fa fa-adjust text-danger"></i>
-                  <i class="fa fa-share"></i>
+                  <i class="fas fa-edit text-primary"></i>
+                  <i class="fas fa-trash-alt text-danger"></i>
+                    
                 </div>
               </td>
             </tr>
-
-
-
-
-
-            <tr class="border-bottom">
-              <td>
-                <div class="p-2">
-                  <span class="d-block font-weight-bold">Tomorrow</span>
-                  <small>3:30PM</small>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-row align-items-center mb-2">
-                  <img src="https://i.imgur.com/C4egmYM.jpg" class="rounded-circle" width="40" />
-                  <div class="d-flex flex-column ml-2">
-                    <span class="d-block font-weight-bold">David Smith</span>
-                    <small class="text-muted">Jasmine Owner Reality group</small>
-                  </div>
-                </div>
-
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">David Clark</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-column">
-                  <span>205 2ndst,#2A,</span>
-                  <span> Brooklyn,NY</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 icons">
-                  <i class="fa fa-phone text-danger"></i>
-                  <i class="fa fa-adjust text-danger"></i>
-                  <i class="fa fa-share"></i>
-                </div>
-              </td>
-            </tr>
-
-
-
-
-            <tr class="border-bottom">
-              <td>
-                <div class="p-2">
-                  <span class="d-block font-weight-bold">Tomorrow</span>
-                  <small>12:30PM</small>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-row align-items-center mb-2">
-                  <img src="https://i.imgur.com/0LKZQYM.jpg" class="rounded-circle" width="40" />
-                  <div class="d-flex flex-column ml-2">
-                    <span class="d-block font-weight-bold">Emmily johnson</span>
-                    <small class="text-muted">Jasmine Owner Reality group</small>
-                  </div>
-                </div>
-
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">Mary Kingston</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-column">
-                  <span>199 Bowery,#7A</span>
-                  <span> Brooklyn,NY</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 icons">
-                  <i class="fa fa-phone text-danger"></i>
-                  <i class="fa fa-adjust text-danger"></i>
-                  <i class="fa fa-share"></i>
-                </div>
-              </td>
-            </tr>
-
-
-
-
-
-
-            <tr class="border-bottom">
-              <td>
-                <div class="p-2">
-                  <span class="d-block font-weight-bold">Tomorrow</span>
-                  <small>1:30PM</small>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-row align-items-center mb-2">
-                  <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle" />
-                  <div class="d-flex flex-column ml-2">
-                    <span class="d-block font-weight-bold">Nick Jones</span>
-                    <small class="text-muted">Jasmine Owner Reality group</small>
-                  </div>
-                </div>
-
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">James Smith</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-column">
-                  <span>123 Clinton Ave,#2A</span>
-                  <span> Brooklyn,NY</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 icons">
-                  <i class="fa fa-phone text-danger"></i>
-                  <i class="fa fa-adjust text-danger"></i>
-                  <i class="fa fa-share"></i>
-                </div>
-              </td>
-            </tr>
-
-
-            <tr class="border-bottom">
-              <td>
-                <div class="p-2">
-                  <span class="d-block font-weight-bold">Tomorrow</span>
-                  <small>1:30PM</small>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-row align-items-center mb-2">
-                  <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle" />
-                  <div class="d-flex flex-column ml-2">
-                    <span class="d-block font-weight-bold">Nick Jones</span>
-                    <small class="text-muted">Jasmine Owner Reality group</small>
-                  </div>
-                </div>
-
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">James Smith</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-column">
-                  <span>123 Clinton Ave,#2A</span>
-                  <span> Brooklyn,NY</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 icons">
-                  <i class="fa fa-phone text-danger"></i>
-                  <i class="fa fa-adjust text-danger"></i>
-                  <i class="fa fa-share"></i>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="border-bottom">
-              <td>
-                <div class="p-2">
-                  <span class="d-block font-weight-bold">Tomorrow</span>
-                  <small>1:30PM</small>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-row align-items-center mb-2">
-                  <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle" />
-                  <div class="d-flex flex-column ml-2">
-                    <span class="d-block font-weight-bold">Nick Jones</span>
-                    <small class="text-muted">Jasmine Owner Reality group</small>
-                  </div>
-                </div>
-
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">James Smith</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-column">
-                  <span>123 Clinton Ave,#2A</span>
-                  <span> Brooklyn,NY</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 icons">
-                  <i class="fa fa-phone text-danger"></i>
-                  <i class="fa fa-adjust text-danger"></i>
-                  <i class="fa fa-share"></i>
-                </div>
-              </td>
-            </tr>
-
-            <tr class="border-bottom">
-              <td>
-                <div class="p-2">
-                  <span class="d-block font-weight-bold">Tomorrow</span>
-                  <small>1:30PM</small>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-row align-items-center mb-2">
-                  <img src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle" />
-                  <div class="d-flex flex-column ml-2">
-                    <span class="d-block font-weight-bold">Nick Jones</span>
-                    <small class="text-muted">Jasmine Owner Reality group</small>
-                  </div>
-                </div>
-
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">James Smith</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-column">
-                  <span>123 Clinton Ave,#2A</span>
-                  <span> Brooklyn,NY</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 icons">
-                  <i class="fa fa-phone text-danger"></i>
-                  <i class="fa fa-adjust text-danger"></i>
-                  <i class="fa fa-share"></i>
-                </div>
-              </td>
-            </tr>
-
-
-
           </tbody>
         </table>
-
-
       </div>
-
-
     </>
   )
 }

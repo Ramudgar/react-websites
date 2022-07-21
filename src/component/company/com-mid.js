@@ -4,6 +4,7 @@ import ComDashboard from "./com-dashboard";
 import AddJob from "./add-job";
 import Profile from "./profile";
 import ViewJobs from "./view-jobs";
+import Setting from "./setting";
 
 
 class ComMid extends Component{
@@ -14,6 +15,7 @@ class ComMid extends Component{
 <Route path="/addJob" element={<AddJob/>} ></Route>
 <Route path="/addProfile" element={<Profile/>} ></Route>
 <Route path="/viewJob" element={<ViewJobs/>} ></Route>
+<Route path="/setting" element={<Setting/>} ></Route>
 </Routes>
         )
     }
