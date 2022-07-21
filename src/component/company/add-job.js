@@ -14,8 +14,8 @@ function AddJob() {
                                     <div class="row justify-content-center">
                                         <div class="col-lg-5 col-md-6 col-sm-12">
                                             <div class="form-group">
-                                                <label for="first-name">Job Title</label>
-                                                <input type="text" class="form-control" id="first-name" placeholder="enter job title">
+                                                <label for="title">Job Title</label>
+                                                <input type="text" class="form-control" id="title" placeholder="enter job title">
 
                                                 </input>
                                             </div>
