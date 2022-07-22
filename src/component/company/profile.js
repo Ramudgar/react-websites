@@ -30,7 +30,7 @@ function Profile() {
                                 <div className="col-md-6"><label className="labels">city</label><input type="text" className="form-control" placeholder="enter city name" /></div>
                                 <div className="col-md-6"><label className="labels">Zip code</label><input type="text" className="form-control" placeholder="enter zipcode" /></div>
                                 <div className="col-md-6"><label className="labels">State</label><input type="text" className="form-control" placeholder="enter state" /></div>
-                                
+
                                 <div className="col-md-6"><label className="labels">Email ID</label><input type="text" className="form-control" placeholder="enter email id" /></div>
                                 <div className="col-md-6"><label className="labels">Institution Name</label><input type="text" className="form-control" placeholder="Institution name" /></div>
                                 <div className="col-md-6"><label className="labels">Degree</label><input type="text" className="form-control" placeholder="Write your Degree types" /></div>
@@ -47,9 +47,9 @@ function Profile() {
                             </div>
                             <div className="row mt-3">
                                 <div className="col-md-6"><label class="my-auto">Upload Image </label>
-                                                <input id="file" type="file" class="form-control" /></div>
-                                </div>
-                        
+                                    <input id="file" type="file" class="form-control" /></div>
+                            </div>
+
 
 
                             <div className="mt-5 text-center"><button className="btn btn-primary profile-button">Save Profile</button></div>

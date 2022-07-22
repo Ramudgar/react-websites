@@ -21,7 +21,7 @@ function Header() {
             <Link class="nav-link color-self  " to="#">About</Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link color-self " to="emp_home">Services</Link>
+            <Link class="nav-link color-self " to="">Services</Link>
           </li>
           <li class="nav-item">
             <Link class="nav-link color-self " to="#">Contact</Link>
@@ -30,7 +30,7 @@ function Header() {
             <Link class="nav-link color-self " to="login">Login</Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link color-self " to="#">Logout</Link>
+            <Link class="nav-link color-self " to="logout">Logout</Link>
           </li>
 
          

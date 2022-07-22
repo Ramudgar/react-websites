@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./herosection";
 import Login from "./login";
 import Signup from "./signup";
+import Logout from "./logout";
 
     class Mid extends Component {
 
@@ -13,7 +14,7 @@ import Signup from "./signup";
 <Route path="/home" element={<Home/>} ></Route>
 <Route path="/login" element={<Login/>} ></Route>
 <Route path="/signup" element={<Signup/>} ></Route>
-
+<Route path="/logout" element={<Logout/>} ></Route>
 
                </Routes>
             );

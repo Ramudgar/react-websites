@@ -10,11 +10,11 @@ function App() {
   return (
 <>
 <BrowserRouter>
-<ComHome/>
-{/* <Header/> */}
+{/* <ComHome/> */}
+<Header/>
 
-{/* <Mid></Mid> */}
-{/* <Footer/> */}
+<Mid></Mid>
+<Footer/>
 </BrowserRouter>
 
 </>

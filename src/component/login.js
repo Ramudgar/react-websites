@@ -6,6 +6,8 @@
 // }
 // export default Login;
 
+import ComHome from '../component/company/com_home';
+
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
@@ -56,12 +58,15 @@ export default function SignIn() {
               localStorage.setItem('userToken', res.data.token);
 
               if(role==="company"){
-              window.location.replace("home");}
+              window.location.replace("../component/company/com_home");}
               else if(role==="employee"){
                 window.location.replace("signup");
               }
-              else{
+              else if(role==="investor"){
                 window.location.replace("login");
+              }
+              else{
+                window.location.replace("signup");
               }
           }else if(email ===null || password===null){
               setMessage("Please some fields are empty");
