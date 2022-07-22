@@ -6,7 +6,7 @@
 // }
 // export default Login;
 
-import ComHome from '../component/company/com_home';
+import { toast } from "react-toastify";
 
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
@@ -32,7 +32,7 @@ export default function SignIn() {
   const [password, setPassword] = useState("");
   const [role,setRole]=useState("");
   const [Message, setMessage] = useState("");
-  const LoginUser = (e) => {
+  const LoginUser =async (e) => {
     try {
     //   e.preventDefault(); // stop the form from reloading the page
       const data = {
@@ -40,7 +40,7 @@ export default function SignIn() {
         password: password,
         role: role
       };
-      axios
+      await axios
         .post("http://localhost:3000/user/login", data)
         .then((res) => {
           // if(res.data.success === true){
@@ -50,25 +50,33 @@ export default function SignIn() {
           // else{
           //   alert("User registration failed");
           // }
-
+          
 
 
           if(res.data.token){
-              console.log(res.data)
-              localStorage.setItem('userToken', res.data.token);
+              console.log(res)
+              localStorage.setItem('token', res.data.token);
+              localStorage.setItem('userId', res.data.user._id);
+              localStorage.setItem('role', res.data.user.role);
 
               if(role==="company"){
-              window.location.replace("../component/company/com_home");}
+                // toast.success("Logged in successfully!", {
+                //   position: toast.POSITION.TOP_CENTER
+                // })
+                
+              window.location.replace('/dashboard');
+            }
               else if(role==="employee"){
+                // toast.success("Logged in successfully!", {
+                //   position: toast.POSITION.TOP_CENTER
+                // })
                 window.location.replace("signup");
               }
-              else if(role==="investor"){
-                window.location.replace("login");
-              }
+             
               else{
                 window.location.replace("signup");
               }
-          }else if(email ===null || password===null){
+          }else if(email ===null && password===null && role===null){
               setMessage("Please some fields are empty");
               alert(Response.data.msg);
           }
@@ -111,7 +119,7 @@ export default function SignIn() {
             Sign in
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-          <p>{Message}</p>
+          
             <TextField
               margin="normal"
               required

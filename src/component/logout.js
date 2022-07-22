@@ -14,7 +14,6 @@ function Logout(){
                     localStorage.removeItem('token');
                     localStorage.removeItem('role');
                     localStorage.removeItem('email');
-                    localStorage.removeItem('id');
                     window.location.replace('login');
                 }
                 }>Yes</button>

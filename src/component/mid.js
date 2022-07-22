@@ -4,6 +4,12 @@ import Home from "./herosection";
 import Login from "./login";
 import Signup from "./signup";
 import Logout from "./logout";
+import ComDashboard from "./company/com-dashboard";
+import AddJob from "./company/add-job";
+import Profile from "./company/profile";
+import ViewJobs from "./company/view-jobs";
+import Setting from "./company/setting";
+import EditJob from "./company/job-edit";
 
     class Mid extends Component {
 
@@ -15,6 +21,13 @@ import Logout from "./logout";
 <Route path="/login" element={<Login/>} ></Route>
 <Route path="/signup" element={<Signup/>} ></Route>
 <Route path="/logout" element={<Logout/>} ></Route>
+<Route path="/dashboard" element={<ComDashboard/>} ></Route>   
+<Route path="/addJob" element={<AddJob/>} ></Route>
+<Route path="/addProfile" element={<Profile/>} ></Route>
+<Route path="/viewJob" element={<ViewJobs/>} ></Route>
+<Route path="/setting" element={<Setting/>} ></Route>
+<Route path="/editJob" element={<EditJob/>} ></Route>
+
 
                </Routes>
             );
