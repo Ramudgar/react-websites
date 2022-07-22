@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-
+import '../../assets/style/com_home.css';
 function ComDashboard() {
 
     return (
         <>
-            <div className="container">
+            <div className="container ">
                 <div className="container p-3 ">
                     <div className="container me-3">
                        <div className='container justify-content-end mb-2 text-end '> <img src="https://www.acquire.com/wp-content/uploads/2019/01/Acquire-Logo-1.png" alt="Acquire" className="img-fluid rounded-circle " ></img><div>Hi,Ram</div></div>

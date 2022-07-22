@@ -4,7 +4,7 @@ function Profile() {
 
     return (
         <>
-            <div className="container rounded bg-white mb-5">
+            <div className="container rounded bg-white mb-5 mt-5 p-3">
                 <div className="row">
                     <div className="col-md-3 border-right">
                         <div className="d-flex flex-column align-items-center text-center p-3 ">

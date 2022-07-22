@@ -3,7 +3,7 @@ import '../../assets/style/footer.css';
 class Footer extends Component {
   render() {
     return (
-        <footer className="container bottom ">
+        <footer className="container bottom mt-5">
         <div className="row ">
             <div className="col-sm-6 col-md-4 footer-navigation justify-content-center">
                 <h3><a href="#">BBB<span>ootstrap</span></a></h3>

@@ -1,9 +1,14 @@
 function Logout(){
     return(
         <>
-        
+
+
+
+
+
+
     <div className="container shadow m-5 p-5">
-        <div className="logout-header p-5">
+        <div className=" p-5">
             <h1>Logout</h1>
         </div>
         <div className="logout-body m-2">
@@ -25,6 +30,7 @@ function Logout(){
             </div>
         </div>
     </div>
+     
 
         
         </>

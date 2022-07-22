@@ -3,32 +3,32 @@ import '../../assets/style/view-jobs.css'
 function ViewJobs() {
   return (
     <>
-      <div class="container mt-5">
+      <div class="container mt-5 mb-5 p-5 pt-3">
 
-        <table class="table table-borderless table-responsive card-1 p-4">
+        <table class="table table-borderless table-responsive card-1 p-4 pb-5">
           <thead>
-            <tr class="border-bottom">
+            <tr class="border-bottom  ">
               <th>
-                <span class="ml-2">Job Id</span>
+                <span class="ml-2 fw-semibold">Job Id</span>
               </th>
               <th>
-                <span class="ml-2">Job Description</span>
+                <span class="ml-2 fw-semibold">Job Description</span>
               </th>
               <th>
-                <span class="ml-2">Job Type</span>
+                <span class="ml-2 fw-semibold">Job Type</span>
               </th>
               <th>
-                <span class="ml-2">posted date</span>
+                <span class="ml-2 fw-semibold">posted date</span>
               </th>
               <th>
-                <span class="ml-2">deadline</span>
+                <span class="ml-2 fw-semibold">deadline</span>
               </th>
              
               <th>
-                <span class="ml-2">Location</span>
+                <span class="ml-2 fw-semibold">Location</span>
               </th>
               <th>
-                <span class="ml-4">Action</span>
+                <span class="ml-4 fw-semibold">Action</span>
               </th>
             </tr>
           </thead>

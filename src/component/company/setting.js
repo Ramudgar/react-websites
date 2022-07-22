@@ -1,8 +1,10 @@
 function Setting(){
     return(
         <>
-            <div className="container ">
-        <div className="container col-sm-8 shadow p-5 ">
+            <div className="container justify-content-center mb-5 ">
+                
+        <div className="container col-sm-9 shadow  p-5 ">
+        <h2 className="text-center text-primary">Setting</h2>
                     <div className="card-body col-sm-10 justify-content-center m-5 p-5 shadow">
                         <h2 className="text-center text-success">Change password</h2>
                         <form>
