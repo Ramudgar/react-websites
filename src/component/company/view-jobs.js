@@ -1,6 +1,47 @@
-import '../../assets/style/view-jobs.css'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import '../../assets/style/view-jobs.css';
 
 function ViewJobs() {
+
+
+  const [details, setDetails] = useState([]);
+  const config = {
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("token"),
+    },
+  };
+  useEffect(() => {
+    axios.get("http://localhost:5000/jobs/getByUser", config).then((res) => {
+      let job=res.data.jobs;
+      setDetails(job);
+    });
+  }, []);
+
+  
+
+// call api to delete job by id
+
+const {idd} = useParams(); // jobs id
+  const deleteJob = (id) => {
+    axios.delete("http://localhost:5000/jobs/deleteById/" + id, config).then((res) => {
+      window.location.reload();
+    }
+    ).catch((err) => {
+      console.log(err);
+    }
+    );
+  }
+
+  const editJob=(id)=>{
+    window.location.replace('editJob');
+  }
+
+
+
+
+
   return (
     <>
       <div class="container mt-5 mb-5 p-5 pt-3">
@@ -33,52 +74,55 @@ function ViewJobs() {
             </tr>
           </thead>
           <tbody>
-            <tr class="border-bottom">
-              <td>
-                <div class="p-2">
-                  <span class="d-block font-weight-bold"></span>
-                  <small>123</small>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-row align-items-center mb-2">
-                  <img src="https://i.imgur.com/ZSkeqnd.jpg" width="40" class="rounded-circle" />
-                  <div class="d-flex flex-column ml-2">
-                    <span class="d-block font-weight-bold">Jennifer john</span>
-                    <small class="text-muted">Jasmine Owner Reality group</small>
-                  </div>
-                </div>
-
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">Full time</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">2072-02-1</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2">
-                  <span class="font-weight-bold">2077-02-4</span>
-                </div>
-              </td>
-              <td>
-                <div class="p-2 d-flex flex-column">
-                  <span>Kathmandu</span>
-                  
-                </div>
-              </td>
-              <td>
-                <div class="p-2 icons">
-                  <i class="fas fa-edit text-primary"></i>
-                  <i class="fas fa-trash-alt text-danger"></i>
-                    
-                </div>
-              </td>
-            </tr>
+          {details.map((singleData)=>
+  ( 
+  <tr class="border-bottom">
+  <td>
+    <div class="p-2">
+      <span class="d-block font-weight-bold"></span>
+      <small>{singleData._id}</small>
+    </div>
+  </td>
+  <td>
+    <div class="p-2 d-flex flex-row align-items-center mb-2">
+      <img src={`http://localhost:5000/${singleData.image}`} width="40" class="rounded-circle" />
+      <div class="d-flex flex-column ml-2">
+        <span class="d-block font-weight-bold">{singleData.title}</span>
+        <small class="text-muted">{singleData.description}</small>
+      </div>
+    </div>
+    
+  </td>
+  <td>
+    <div class="p-2">
+      <span class="font-weight-bold">{singleData.jobType}</span>
+    </div>
+  </td>
+  <td>
+    <div class="p-2">
+      <span class="font-weight-bold">{singleData.dateOfPosting}</span>
+    </div>
+  </td>
+  <td>
+    <div class="p-2">
+      <span class="font-weight-bold">{singleData.deadline}</span>
+    </div>
+  </td>
+  <td>
+    <div class="p-2 d-flex flex-column">
+      <span>{singleData.location}</span>
+      
+    </div>
+  </td>
+  <td>
+    <div class="p-2 icons">
+     <span className='btn'  onClick={()=>editJob(singleData._id)}><i class="fas fa-edit text-primary" ></i></span> 
+     <span className='btn' onClick={()=>deleteJob(singleData._id)}>  <i class="fas fa-trash-alt text-danger"  ></i></span> 
+        
+    </div>
+  </td>
+</tr>
+  ))};
           </tbody>
         </table>
       </div>

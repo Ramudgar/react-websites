@@ -41,7 +41,7 @@ export default function SignIn() {
         role: role
       };
       await axios
-        .post("http://localhost:3000/user/login", data)
+        .post("http://localhost:5000/user/login", data)
         .then((res) => {
           // if(res.data.success === true){
           //   alert("User logged in successfully");
@@ -112,6 +112,7 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
+          <p>{Message}</p>
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             <LockOutlinedIcon />
           </Avatar>

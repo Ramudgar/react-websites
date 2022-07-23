@@ -121,11 +121,9 @@ p.exist span{
 }
 @media screen and (max-width: 768px){
 	.privacy{
-		width: 450px;
+		width: 100%;
 	}
-	.rcol{
-		padding: 60px 180px 60px 60px;
-	}
+	
 	}
 	@media screen and (max-width: 420px){
 		.rcol{

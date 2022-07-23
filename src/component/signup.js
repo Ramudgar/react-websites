@@ -26,7 +26,7 @@ function Signup(){
       role: role
     };
     
-    axios.post("http://localhost:3000/user/register", data).then((res) => {
+    axios.post("http://localhost:5000/user/register", data).then((res) => {
       console.log(res.data)
       if(res.data.success === true){
         alert("User registered successfully");
